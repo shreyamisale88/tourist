@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body{
+            background-color: rgba(253, 253, 253, 0.85);
+            /*font-family: sans-serif;*/
+        }
+        h1{
+            font-size: 2.1rem;
+            line-height: 1.4;
+            letter-spacing: 0.3rem;
+            text-align: center;
+            color:black;
+            margin-top: 50px;
+
+        }
+        .maindiv{
+            width: 70%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-size: 50% 50%;
+            animation: slider 5s infinite linear;
+            
+        }
+        .banner{
+            width: 768px;
+            height: 324px;
+            overflow: hidden;
+        }
+        .banner img{
+            width: 100%;
+            height: auto;
+        }
+
+        .box {
+            background-color: rgb(87, 84, 84);
+            text-align: left;
+            color: white;
+            width: 300px;
+            border: 1px solid gray;
+            padding: 50px;
+            margin: 20px;
+            right:-170px;
+            position: absolute;
+            top: 2%;
+        }
+        .book-btn{
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background:rgb(255, 83, 20);
+            border: 1px solid orangered;
+            outline: 1px;
+            text-align: center;
+            color:white;
+            text-decoration: none;
+
+        }
+        .loc-btn{
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background:black;
+            border: 1px solid black;
+            outline: 1px;
+            text-align: center;
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+        h4{
+            color: rgb(255, 83, 20);
+            font-size: 30px;
+            margin-bottom: 2px;
+            margin-top: -50px;
+            
+            
+        }
+        h5{
+            font-size: 1.8rem;
+            margin-top: 10px;
+    
+        }
+
+
+        .column {
+            float: left;
+            width: 46%;
+            padding: 22px;
+            }
+
+            /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+            }
+            p:before {
+                content: ' \2714';
+                color: orangered;
+   
+            }
+
+        </style>
+    </head>
+    <body>
+            
+    <h1>Hotel Rama International</h1>
+    <div class="maindiv"> 
+        <div class="box">
+            <h5>Hotel Rama International</h5>
+            <h4>&#9733&#9733&#9733&#9733&#9733</h4>
+            <h3><a href="#" class="loc-btn"><i class="material-icons"style="color: rgb(255, 83, 20)">&#xe55f;</i>  LOCATION:Aurangabad </a></h3>
+            <h2><a href="#" class="book-btn">Book This Hotel</a></h2>
+        </div>  
+    </div>
+    <section class="Banner cycle-slideshow">
+        <img src="welcomhotel-rama-aurangabad1.jpg" alt="Banner 1">
+        <img src="welcomhotel-rama-aurangabad2.jpg" alt="Banner 2">
+        <img src="welcomhotel-rama-aurangabad3.jpg" alt="Banner 3">
+        <img src="welcomhotel-rama-aurangabad4.jpg" alt="Banner 4">
+
+        <article>
+            <div class="row">
+                <div class="column">
+                    <h2>Hotel Description</h2>
+                    Welcome Hotel Rama International is one of the famous hotels by ITC Group and is the most elegant and distinguished hotels which is a five star property. It is located at Chikalthana, Aurangabad and has 132 rooms including deluxe suites which suits the needs of the travellers to the town who are in search of some peace at Sai Baba Mandir or they are looking to see the world renowned Ajanta and Ellora caves. It is also suitable for the high end business class persons who come here to attend meeting or conferences as their are many industries in the vicinity. The hotel is known for providing great amenities such as Wi-Fi in every room along with clean and healthy environment. One can avail the facility of swimming pool to refresh themselves and enjoy swimming at any hours. The multi-cuisine restaurant provides a great deal of options for the foodies to enjoy various kinds of delicious foods. Also, a sports bar by the name of Pit-Stop is here which gives one opportunity to enjoy exotic drinks. In case if a person is travelling by their own vehicle then they can get the parking facility at the hotel. Also, the hotel is known for giving great facility to the travellers as there are many people coming to visit Aurangabad. So, if you are one of them then certainly you should choose this hotel for your stay.
+                        <h2>Hotel Facilities</h2>
+                        <p>Restaurants</p>
+                        <p>Madhuban- Multi Cuisine Restaurant</p>
+                        <p>Pit-Stop- Sports Bar</p>
+                        <p>Wi-Fi</p>
+                        <p>Swimming Pool</p>
+                        <p>Parking</p>
+                        <p>24 Hour Front Desk</p>
+                        <p>Barber/Beauty Salon</p>
+                        <p>Business Centre/ Services</p>
+                        <p>Car Rental Services</p>
+                        <p>oncierge Services</p>
+                        <p>Travel Services</p>
+                        <p>Currency Exchange</p>
+                        <p>Safe Deposit Boxes</p>
+                        <p>Fitness Facility</p>
+                        <p>Florist</p>
+
+                        <h2>Travel Information</h2>
+                        <p>Chikkalthana Airport Aurangabad is 4 kms from the hotel.</p>
+                        <p>Railway station Auranagabad is 5.2 kms from hotel.</p>
+                        <p>Central Bus Station Aurangabad is within walking distance from hotel.</p>
+                        
+                </div>
+
+                <div class="column">
+                    <h2>Accommodation</h2>
+                        The rooms at this hotel are well maintained and furnished in an elegant manner. It is suitable for the business traveller or the leisure traveler who are on a trip to near-by tourist destinations. There are 132 rooms which include 5 Star Deluxe suite which suits the needs of the people in the most comprehensive manner. The rooms are of two types:
+                    <p>Corporate room- Corporate rooms are one of the best with elegant and stylish furnitures which suit your mood and also various kinds of amenities are provided with the room.</p>
+                    <p>Executive club room- Executive club room as its name suggest that the room are great in style and suits the needs of the executive class people because of the great amenities provided by them.</p>
+
+                        <h2>Room Facilities</h2>
+                        <p>Air Conditioning</p>
+                        <p>Television</p>
+                        <p>Internet / Broadband</p>
+                        <p>Mini Bar</p>
+                        <p>Safe</p>
+                        <p>Telephone</p>
+                        <p>Flat Screen Television</p>
+                        <p>Hangers</p>
+                        <p>Temperature Control</p>
+                        <p>Wake-Up Call Service</p>
+                        <p>Private Bathroom</p>
+                        <p>Living Room</p>
+                        
+                        <h2> Nearby Tourist Attractions</h2>
+                        <p>Pan Chakki- 6.5 kms</p>
+                        <p>Bibi ka Maqbara- 8.9 kms</p>
+                        <p>Aurangabad caves: 10.8 kms</p>
+                        <p>Daulatabad Fort: 18.6 kms</p>
+                        <p>Grishneshwara temples: 32.4 kms</p>
+                        <p>Ellora Caves: 33.1 kms</p>
+                        <p>Shani Signapur : 82.6 kms</p>
+                        <p>Ajanta caves: 95.1 kms</p>
+                        <p>Shirdi: 110.3 kms</p>
+                     
+
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    </body>
+</html>

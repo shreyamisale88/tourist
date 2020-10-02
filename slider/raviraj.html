@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body{
+            background-color: rgba(253, 253, 253, 0.85);
+        }
+        h1{
+            font-size: 2.1rem;
+            line-height: 1.4;
+            letter-spacing: 0.3rem;
+            text-align: center;
+            color:black;
+            margin-top: 50px;
+
+        }
+        .maindiv{
+            width: 70%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-size: 50% 50%;
+            animation: slider 5s infinite linear;
+            
+        }
+        .banner{
+            width: 768px;
+            height: 324px;
+            overflow: hidden;
+        }
+        .banner img{
+            width: 100%;
+            height: auto;
+        }
+
+        .box {
+            background-color: rgb(87, 84, 84);
+            text-align: left;
+            color: white;
+            width: 300px;
+            border: 1px solid gray;
+            padding: 50px;
+            margin: 20px;
+            right:-170px;
+            position: absolute;
+            top: 2%;
+        }
+        .book-btn{
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background:rgb(255, 83, 20);
+            border: 1px solid orangered;
+            outline: 1px;
+            text-align: center;
+            color:white;
+            text-decoration: none;
+
+        }
+        .loc-btn{
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background:black;
+            border: 1px solid black;
+            outline: 1px;
+            text-align: center;
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+        h4{
+            color: rgb(255, 83, 20);
+            font-size: 30px;
+            margin-bottom: 2px;
+            margin-top: -50px;
+            
+            
+        }
+        h5{
+            font-size: 1.8rem;
+            margin-top: 10px;
+    
+        }
+
+
+        .column {
+            float: left;
+            width: 46%;
+            padding: 22px;
+            }
+
+            /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+            }
+            p:before {
+                content: ' \2714';
+                color:orangered;
+   
+            }
+
+        </style>
+    </head>
+    <body>
+            
+    <h1>Hotel Raviraj</h1>
+    <div class="maindiv">  
+        <div class="box">
+            <h5>Hotel Raviraj</h5>
+            <h4>&#9733&#9733&#9733&#9733&#9733</h4>
+            <h3><a href="#" class="loc-btn"><i class="material-icons"style="color: rgb(255, 83, 20)">&#xe55f;</i>  LOCATION:Aurangabad </a></h3>
+            <h2><a href="#" class="book-btn">Book This Hotel</a></h2>
+        </div>  
+    </div>
+    <section class="Banner cycle-slideshow">
+        <img src="hotel-raviraj-aurangabad1.jpg" alt="Banner 1">
+        <img src="hotel-raviraj-aurangabad2.jpg" alt="Banner 2">
+        <img src="hotel-raviraj-aurangabad3.jpg" alt="Banner 3">
+        <img src="hotel-raviraj-aurangabad4.jpg" alt="Banner 4">
+
+        <article>
+            <div class="row">
+                <div class="column">
+                    <h2>Hotel Description</h2>
+                    Hotel Raviraj is one of the most elegant hotels in Aurangabad by Panchwati Group. The famous hotel has great amenities which include 42 rooms, family restaurant and kids lay zone along with conference hall and gym. The hotel fulfills all the basic requirements with breakfast as per order and good wi-fi speed which makes it an ideal business as well family hotel.
+                    <h2>Address</h2>
+                    Hotel Raviraj, Dr. Rajendra Prasad Marg, Adalat road, Near Baba Petrol Pump, Aurangabad- 431001
+                        <h2>Hotel Facilities</h2>
+                        <p>	Internet Facilities</p>
+                        <p>	Business Centre</p>
+                        <p>	Meeting Facilities</p>
+                        <h2>Hotel amenities</h2>
+                        <p>	Doctor On Call</p>
+                        <p>	24 Hr Room Service</p>
+                        <p>	Money Exchange Facility</p>
+                        <p> Laundry</p>
+                        <p>	A/C Rooms</p>
+                        <p> Attached Bathroom</p>
+                        <h2>Room Amenities</h2>
+                        All the rooms are spacious and are neat and clean. They offers amenities like
+                        <p> Free Wi-Fi</p>
+                        <p>	Air Conditioning</p>
+                        <p>	LED TV with satellite cable</p>
+                        <p>	Luggage Space</p>
+                        <p>	Coffee/ Tea Maker</p>
+                        <p>	Laundry and Dry Cleaning</p>
+                        <p> Wardrobe with Hangers</p>
+
+                </div>
+
+                <div class="column">
+                   <h2>Accommodation</h2>
+                   The accomodation is one of the finest with luxury and state-of-the-art amenities. Also the rooms are categorized into Family Room, Superior Deluxe Room, Corporate M. Suite and Royal Gem which have the best in class facilities including world best floors and plush furnishings. It has a range of thoughtful amenities which match the world class designs.
+                        <h2> Nearby Tourist Attractions</h2>
+                        <p>Bibi ka Maqbara- 5 kms</p>
+                        <p>Aurangabad caves: 7 kms</p>
+                        <p>Pan Chakki- 2.8 Kms</p>
+                        <p>Daulatabad Fort: 17 kms</p>
+                        <p>Ellora Caves: 29.7 kms</p>
+                        <p>Grishneshwara temples: 29 kms</p>
+                        <p>Shani Signapur : 79.2 kms</p>
+                        <p>Ajanta caves: 96.8 kms</p>
+                        <p>Shirdi: 106.9 kms</p>
+                        <h2>Travel Information</h2>
+                        	<p>Chikkalthana Airport Aurangabad is 8 kms from the hotel.</p>
+                        	<p>Railway station Auranagabad is 1 kms from the hotel.</p>
+                        	<p>Central Bus Station Aurangabad is within walking distance from the hotel.</p>
+
+                        
+
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    </body>
+</html>

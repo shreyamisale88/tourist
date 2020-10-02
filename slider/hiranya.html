@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            body{
+            background-color: rgba(253, 253, 253, 0.85);
+            /*font-family: sans-serif;*/
+        }
+        h1{
+            font-size: 2.1rem;
+            line-height: 1.4;
+            letter-spacing: 0.3rem;
+            text-align: center;
+            color:black;
+            margin-top: 50px;
+
+        }
+        .maindiv{
+            width: 70%;
+            height: 400px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-size: 50% 50%;
+            animation: slider 5s infinite linear;
+            
+        }
+        .banner{
+            width: 768px;
+            height: 324px;
+            overflow: hidden;
+        }
+        .banner img{
+            width: 100%;
+            height: auto;
+        }
+
+        .box {
+            background-color: rgb(87, 84, 84);
+            text-align: left;
+            color: white;
+            width: 300px;
+            border: 1px solid gray;
+            padding: 50px;
+            margin: 20px;
+            right:-170px;
+            position: absolute;
+            top: 2%;
+        }
+        .book-btn{
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background:rgb(255, 83, 20);
+            border: 1px solid orangered;
+            outline: 1px;
+            text-align: center;
+            color:white;
+            text-decoration: none;
+
+        }
+        .loc-btn{
+            width: 85%;
+            padding: 10px 30px;
+            cursor: pointer;
+            display: block;
+            margin: auto;
+            background:black;
+            border: 1px solid black;
+            outline: 1px;
+            text-align: center;
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
+
+        }
+        h4{
+            color: rgb(255, 83, 20);
+            font-size: 30px;
+            margin-bottom: 2px;
+            margin-top: -50px;
+            
+            
+        }
+        h5{
+            font-size: 1.8rem;
+            margin-top: 10px;
+    
+        }
+
+        .column {
+            float: left;
+            width: 46%;
+            padding: 22px;
+            }
+
+            /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+            }
+            p:before {
+                content: ' \2714';
+                color: orangered;
+   
+            }
+
+        </style>
+    </head>
+    <body>
+            
+    <h1>Hiranya Resort</h1>
+    <div class="maindiv">  
+        <div class="box">
+            <h5>Hiranya Resort</h5>
+            <h4>&#9733&#9733&#9733&#9733&#9733</h4>
+            <h3><a href="#" class="loc-btn"><i class="material-icons"style="color: rgb(255, 83, 20)">&#xe55f;</i>  LOCATION:Aurangabad </a></h3>
+            <h2><a href="#" class="book-btn">Book This Hotel</a></h2>
+        </div>
+    </div>
+    <section class="Banner cycle-slideshow">
+        <img src="hiranya-resorts1.jpg" alt="Banner 1">
+        <img src="hiranya-resorts2.jpg" alt="Banner 2">
+        <img src="hiranya-resorts3.jpg" alt="Banner 3">
+        <img src="hiranya-resort4.jpg" alt="Banner 4">
+        <img src="hiranya-resort5.jpg" alt="Banner 5">
+        <img src="hiranya-resorts8.jpg" alt="Banner 8">
+
+
+
+        <article>
+            <div class="row">
+                <div class="column">
+                    <h2>Hiranya Resort</h2>
+                    Hiranya Resorts is a perfect getaway from the buzz of the city life; a retreat into the soothing company of nature. It is a few minutes drive from Aurangabad city. Resort is 25.5 km away from Aurangabad airport, 112 km from Manmad Junction and 7.4 km from Bhadra Maruti Bus Stand.
+                    
+                        <h2>Hotel Facilities</h2>
+                        <p>Housekeeping</p>
+                        <p>Newspaper</p>
+                        <p>Laundry</p>
+                        <p>Air Conditioning</p>
+                        <p>Room Services</p>
+                        <p>Parking Area</p>
+                        <p>Airport Transfer Facility</p>
+                        <p>Power Backup</p>
+                        <p>Public Restrooms</p>
+
+        
+                </div>
+
+                <div class="column">
+                    <h2>Accommodation</h2>
+                            The rooms are executive AC rooms and are spacious with great room service. The rooms are well lit and help you to get much kind of services which are mentioned below:
+
+                        <h2>Travel Information</h2>
+                        <p>Chikkalthana Airport Aurangabad is 5.1 kms from the hotel.</p>
+                        <p>Railway station Auranagabad is 5.7 kms from the hotel.</p>
+                        <p>Central Bus Station Aurangabad is 5.8 kms from hotel.</p>
+
+                        <h2> Nearby Tourist Attractions</h2>
+                        <p>Pan Chakki- 7.0 kms</p>
+                        <p>Bibi ka Maqbara- 7.5 kms</p>
+                        <p>Aurangabad caves: 11.5 kms</p>
+                        <p>Daulatabad Fort: 19.1 kms</p>
+                        <p>Grishneshwara temples: 32.9 kms</p>
+                        <p>Ellora Caves: 33.6 kms</p>
+                        <p>Shani Signapur : 83.1 kms</p>
+                        <p>Ajanta caves: 95.6 kms</p>
+                        <p>Shirdi: 110.8 kms</p>
+                      
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+    </body>
+</html>

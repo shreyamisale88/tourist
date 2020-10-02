@@ -1,36 +1,7 @@
-/*{
-    margin:0;
-    padding:0;
-    font-family:sans-serif;
-    
-}
-.container{
-    width:100%;
-    height:100%;
-    background:white;
-    text-align:center;
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(aurangabad-cover.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.menu ul{
-    display:inline-flex;
-    margin: 50px;
-}
-.menu ul li{
-    list-style:none;
-    margin: 0 20px;
-    color:white;
-    cursor: pointer;
-}*/
-
-
-
 *{
     margin:0;
     padding:0;
     font-family:sans-serif;
-    font-size: large;
     box-sizing: border-box;
     
 }
@@ -39,17 +10,13 @@
     height:100%;
     background:white;
     text-align:center;
-    background:linear-gradient(rgba(0,0,40,0.4),rgba(0,0,40,0.4)),url(Cover-for-Places.jpg);
-    /*background-image: url(Cover-for-Places.jpg);*/
-    /*background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(Cover-for-Places.jpg);*/
-    background-size: cover;
+    background:linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(Bibi-Ka-Maqbara.png);
+    background-size: contain;
     background-position: center;
 }
-
-
-/*.active{
+.active{
     color: #19d7f8!important;
-}*/
+}
 .menu ul{
     background: none;
     text-align: center;
@@ -58,21 +25,19 @@
 .menu ul{
     list-style: none;
     display: inline-flex;
-    margin: 0 20px;
+     margin: 0 20px;
     color:white;
     cursor: pointer;
-}
-.active{
-    color:#19b9f8!important;
+
 }
 .menu ul li{
-    width: 110px;
+    width: 120px;
     margin: 15px;
-    padding: 25px;
-    margin-top: 20px;
+    padding: 15px;
+  
 }
-.menu ul li a {
-    text-decoration: white;
+.menu ul li a{
+    text-decoration:#fff;
     color:white;
 }
 .active, .menu ul li:hover
@@ -88,7 +53,7 @@
     display: block;
     border:1px dotted black;
     position: absolute;
-    background-color:black;
+    background-color:#42455a;
     opacity: 0.8;
     margin-top: 15px;
     margin-left: 15px;
@@ -101,7 +66,7 @@
 }
 .menu ul li:hover .sub-menu ul li
 {
-    width: 100px;
+    width: 150px;
     padding: 10px;
     border-bottom: 1px dotted black;
     background: transparent;
@@ -112,37 +77,14 @@
 {
     border-bottom: none;
 }
-.title{
-   position: absolute;
-   top:95%;
-   left: 50%;
-   transform:translate(-50%,-50%);
-}
-.title h1{
-    color: #fff;
-    font-size: 80px;
-    line-height: 1.8rem;
-    letter-spacing: 1.2rem;
-}
-.logo img{
-    float: left;
-    width: 250px;
-    height: auto;
-    padding: 5px;
-    margin-top: 20px;
-    /*border-radius: 1000px;*/
-}
-
-
-
 .signup-btn{
     top: 40px;
-    right:200px;
+    right:120px;
     position:absolute;
     text-decoration:none;
     color:white;
     border:2px solid transparent;
-    border-radius:  30px;
+    border-radius:  20px;
     background-image: linear-gradient(#42455a,#42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
     background-origin: border-box;
     background-clip: content-box,border-box;
@@ -154,12 +96,12 @@
 }
 .signin-btn{
     top: 40px;
-    right:80px;
+    right:10px;
     position:absolute;
     text-decoration:none;
     color:white;
     border:2px solid transparent;
-    border-radius:  30px;
+    border-radius:  20px;
     background-image: linear-gradient(#42455a,#42455a),radial-gradient(circle at top left,#fd00da,#19d7f8);
     background-origin: border-box;
     background-clip: content-box,border-box;
@@ -169,19 +111,67 @@
     display:block;
     padding: 8px 22px;
 }
-/*packages*/
-.package{
-    padding: 80px 0;
-    background:white;
-    text-align: center;
+
+/*.{
+    box-sizing: border-box;
+    width: 60;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:1s;
+    background-color:grey;
+}*/
+/*.{
+    transform: scale(1.1);
+}*/
+.column{
+    float:left;
+    /width:33.33%;/
+    padding:30px;
 }
-h1{
-    padding-bottom:50px ;
-    font-size: 3.5rem;
-    line-height: 1.4;
-    letter-spacing: 0.5rem;
-    text-align: center;
-    color:black;
+.row::after{
+    content:"";
+    clear:both;
+    display:table;
 
 }
+/*.package-box img{
+   width: 100;
+   border-radius: 10px;
+   cursor: pointer;
+   transition:1s;
+   background-color:grey;
 
+}
+.package-box img:hover{
+    transform: scale(1.1);
+}
+.h4{
+    width:200px;
+    text-align: center;
+    font-weight: 600;
+}*/
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+  }
+.drop{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+.drop >li >a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-family: sans-serif;
+    font-size: small;
+    background-color: black;
+    opacity: 0.8;
+}
