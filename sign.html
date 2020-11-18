@@ -16,18 +16,18 @@
             <img src="twitter.jpg">
             <img src="google.jpg">
         </div>
-        <form id="login" class="input-group">
+        <form id="login" class="input-group" >
             <input types="text" class="input-field" placeholder="User Id" required>
             <input type="password" class="input-field" id="psw" name="psw" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
             <input type="checkbox" class="check-box"><span>Forget Password</span>
             <button type="submit" class="submit-btn">Log In</button>
         </form>
-        <form id="register" class="input-group">
-            <input types="text" class="input-field" placeholder="User Id" required>
-            <input type="email" class="input-field" action="/action_page.php" placeholder="Email Id" required>
-            <input type="password" class="input-field" id="psw" name="psw" placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required><br><br>
+        <form id="register" class="input-group" action="index.php" method="POST">
+            <input types="text" class="input-field" placeholder="User Id" name="id" required>
+            <input type="email" class="input-field" action="/action_page.php" placeholder="Email Id" name="email" required>
+            <input type="password" class="input-field" id="psw" name="password"  placeholder="Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"  required><br><br>
             <!--<input type="password" class="input-field" id="psw" name="psw" placeholder="Re-Enter Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br>-->
-            <button type="submit" class="submit-btn">Log In</button>
+            <button type="submit" class="submit-btn">Register</button></a>
         </form>
     </div>
     <!--<div id="message">

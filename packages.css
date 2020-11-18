@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    font-size: large;
+    box-sizing: border-box; 
+}
+
+*{
+    box-sizing: border-box;
+}
+/*
+.container{
+    width:100%;
+    height:100%;
+    background: black;
+    /background-image: url(Cover-for-Places.jpg);/
+    /background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(Cover-for-Places.jpg);/
+
+.package{
+    padding: 80px 0;
+    text-align: center;
+    padding-bottom: 100px;
+
+}
+.pqr{
+    background-color: transparent;
+    padding: 22px;
+    margin: 20;
+    padding-left: 270;
+}
+.input{
+    padding: 70px;
+}
+
+h1{
+    padding-bottom:50px ;
+    font-size: 3.5rem;
+    line-height: 1.4;
+    letter-spacing: 0.5rem;
+    text-align: center;
+    color:white;
+
+}*/
+.menu ul{
+    background: none;
+    text-align: center;
+    
+}
+.menu ul{
+    top: 0px;
+    list-style: none;
+    display: inline-flex;
+    margin: 0 20px;
+    color:black;
+    cursor: pointer;
+}
+/*.active{
+    color:#19b9f8!important;
+}*/
+
+.menu ul li{
+    top:0px;
+    width: 110px;
+    margin: 15px;
+    padding: 17px;
+    margin-top: 0px;
+    /*color: black;*/
+}
+.menu ul li a {
+    text-decoration: black;
+    color: black;
+}
+.active, .menu ul li:hover
+{
+    background: transparent;
+    border-radius: 3px;
+}
+.sub-menu{
+    display: none;
+}
+.menu ul li:hover .sub-menu
+{
+    display: block;
+    border:1px dotted black;
+    position: absolute;
+    background-color:black;
+    opacity: 0.8;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.menu ul li:hover .sub-menu ul
+{
+    display: block;
+    margin: 5px;
+
+}
+.menu ul li:hover .sub-menu ul li
+{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu ul li:hover .sub-menu ul li:last-child
+{
+    border-bottom: none;
+}
+/*.title{
+   position: absolute;
+   top:95%;
+   left: 50%;
+   transform:translate(-50%,-50%);
+}
+.title h1{
+    color: #fff;
+    font-size: 80px;
+    line-height: 1.8rem;
+    letter-spacing: 1.2rem;
+}
+.logo img{
+    float: left;
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: black;
+    /border-radius: 1000px;/
+}
+/*
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+footer{
+    background-color:   black;
+    padding: 25px;
+    font-size: 20px;
+}
+.footer-nav{
+    list-style: none;
+    float: left;
+}
+.social-links{
+    list-style: none;
+    float: right;
+}
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color:rgb(133, 133, 133);
+    transition: color 0.2s;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 160%;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active{
+    color:white;
+}
+footer p{
+    color:rgb(133, 133, 133);
+    text-align: center;
+    font-size: 90%;
+    margin-top: 5px;
+}
+
+.box{
+    background-color: solid wheat;
+    width: 50px;
+    border: 2px solid black;
+    padding: 50px;
+    margin: 10px;
+  }
+.box {
+  float: left;
+  width: 20%;
+  padding: 20px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.signin-btn{
+    top: 20px;
+    right:10px;
+    position:absolute;
+    text-decoration:none;
+    color:white;
+    border-radius:  15px;
+    background-image: linear-gradient(wheat);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+}
+
+.signin-btn span{
+    display:block;
+    padding: 8px 22px;
+}
+.title h1{
+    top: 0px;
+    color: #fff;
+    font-size: 50px;
+    line-height: 1.3rem;
+    letter-spacing: 1.2rem;
+}
+.logo img{
+    float: left;
+    width: 230px;
+    height: auto;
+    padding: 5px;
+    margin-top: 10px;
+    /*border-radius: 1000px;*/
+    background-color: black;
+    margin-left: 10px;
+}
