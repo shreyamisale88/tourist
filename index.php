@@ -16,22 +16,22 @@ if(mysqli_connect_error()){
 	die('Connect Error('. mysqli_connect_error().')'. mysqli_connect_error());
 }else{
 	$SELECT = "SELECT email From sign Where email = ? Limit 1 ";
-	$INSERT = "INSERT Into sign (id, email, password) values($userid,$email,$password)";
+	$INSERT = "INSERT Into sign (sno,id, email, password) values(?,?,?,?)";
 
 	$stmt = $con->prepare($SELECT);
 	$stmt->bind_param("s",$email);
 	$stmt->execute();
-	$stmt->bind_result($email);
+	$stmt->bind_result($email);    
 	$stmt->store_result();
 	$rnum = $stmt->num_rows;
 
 	if($rnum==0){
 		$stmt->close();
 		$stmt = $con->prepare($INSERT);
-		$stmt->bind_param("sss",$userid, $email, $password);
+		$stmt->bind_param('isss',$sno,$userid, $email, $password);
 		$stmt->execute();
 		echo "You registered sucessfully";
-		header('Location:index.html');
+		/*header('Location:index.html');*/
 	}else {
 		echo "Already registered using this email";
 	}
